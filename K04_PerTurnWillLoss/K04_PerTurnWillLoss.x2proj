@@ -11,12 +11,16 @@ tags= War Of The Chosen, Gameplay, WotC, lwotc adapted, tactical, will loss, wil
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Config\" />
+    <Folder Include="Config\MoreWillRollEdits" />
     <Folder Include="Localization\" />
     <Folder Include="Src\" />
     <Folder Include="Src\K04_PerTurnWillLoss\" />
     <Folder Include="Src\K04_PerTurnWillLoss\Classes\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Config\MoreWillRollEdits\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\XComGameCore.ini">
       <SubType>Content</SubType>
     </Content>

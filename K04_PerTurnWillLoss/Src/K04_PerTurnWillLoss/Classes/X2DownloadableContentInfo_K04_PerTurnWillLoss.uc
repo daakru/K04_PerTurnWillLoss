@@ -1,7 +1,7 @@
 /*                                                                             
  * FILE:     XComDownloadableContentInfo_K04_PerTurnWillLoss.uc
  * AUTHOR:   Kinetos#6935, https://steamcommunity.com/id/kinetos/
- * VERSION:  K04 v0.0
+ * VERSION:  K04 v1.0
  *
  * Specify Mod behavior on campaign creation or initial saved game load.
  *

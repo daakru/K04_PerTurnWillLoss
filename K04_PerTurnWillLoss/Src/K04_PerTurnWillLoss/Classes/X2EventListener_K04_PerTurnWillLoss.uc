@@ -1,7 +1,7 @@
 /*                                                                             
  * FILE:     X2EventListener_K04_PerTurnWillLoss.uc
  * AUTHOR:   Kinetos#6935, https://steamcommunity.com/id/kinetos/
- * VERSION:  K04 v0.0
+ * VERSION:  K04 v1.0
  *
  * Listener Template that adds Per-Turn will loss mechanic.
  * Adapted for base WotC from X2EventListener_Tactical.uc in long-war-2/lwotc
@@ -12,6 +12,8 @@
 
 class X2EventListener_K04_PerTurnWillLoss extends X2EventListener
     config(PerTurnWillLoss);
+
+var config bool bLog;
 
 var config int NUM_TURNS_FOR_WILL_LOSS;
 var config int WILL_LOSS_START_TURN_ADJUST;
@@ -85,7 +87,8 @@ static protected function EventListenerReturn K04_RollForPerTurnWillLoss(
 		if (class'XComGameStateContext_WillRoll'.static
             .ShouldPerformWillRoll(default.PerTurnWillRollData, SquadUnit))
 		{
-			`Log("Performing Will roll",, 'K04_PerTurnWillLoss');
+			`Log("Performing Will roll for" @ SquadUnit.GetFullName(),
+                default.bLog, 'K04_PerTurnWillLoss');
 			WillRollContext = class'XComGameStateContext_WillRoll'.static
                 .CreateWillRollContext(SquadUnit, 'PlayerTurnEnd',, false);
 			WillRollContext.DoWillRoll(default.PerTurnWillRollData);
