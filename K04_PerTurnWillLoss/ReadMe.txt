@@ -1,17 +1,17 @@
-﻿[WotC] Turn-Based Will Loss
+﻿[WotC] Per-Turn Will Loss
 Mod Author: Kinetos#6935
 Version: 1.0
 
-Replaces the Will Loss from discovering an enemy pod with a turn based Will Loss mechanic.
+Replaces the Will Loss from discovering an enemy pod with a turn-based Will Loss mechanic.
 All code is available on GitHub (https://github.com/daakru/K04_PerTurnWillLoss).
 
 Description:
 ------------
-THIS MOD IS NOT INTENDED FOR USE WITH LONG WAR OF THE CHOSEN
-I give no guarantees that doing so will not break the game.
+DISCLAIMER: THIS MOD IS NOT INTENDED FOR USE WITH LONG WAR OF THE CHOSEN
+I give no guarantees that doing so will not break something.
 
 Disables the default Pod Sighted Will Loss event, adding a turn-based Will Loss mechanic with a configurable turn frequency.
-This is adapted from the Turn-Based Will Loss mechanic present in LWotC for use in the base version of WotC.
+This is adapted for use in the base version of WotC from the Turn-Based Will Loss mechanic present in LWotC.
 
 Requirements:
 -------------
