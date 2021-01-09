@@ -4,7 +4,7 @@
     <Guid>da466b5e-8899-414f-851e-02c3455b3a06</Guid>
     <Name>K04_PerTurnWillLoss</Name>
     <Description>Replaces the Will Loss from discovering an enemy pod with a turn based Will Loss mechanic.
-tags= War Of The Chosen, Gameplay, WotC, lwotc adapted, tactical, will loss, will, yoink</Description>
+tags= War Of The Chosen, Gameplay, WotC, lwotc adapted, tactical, will, will loss, yoink</Description>
     <SteamPublishID>0</SteamPublishID>
     <AssemblyName>K04_PerTurnWillLoss</AssemblyName>
     <RootNamespace>K04_PerTurnWillLoss</RootNamespace>

@@ -16,7 +16,7 @@ class X2EventListener_K04_PerTurnWillLoss extends X2EventListener
 var config bool bLog;
 
 var config int NUM_TURNS_FOR_WILL_LOSS;
-var config int WILL_LOSS_START_TURN_ADJUST;
+var config int WILL_LOSS_START_TURN;
 
 // Camel Caps for consistency with base game's will roll data config vars
 var const config WillEventRollData PerTurnWillRollData;
@@ -73,7 +73,7 @@ static protected function EventListenerReturn K04_RollForPerTurnWillLoss(
 
 	// We only want to lose Will every n turns, so skip other turns
 	if (PlayerState.GetTeam() != eTeam_XCom
-        || (PlayerState.PlayerTurnCount - default.WILL_LOSS_START_TURN_ADJUST)
+        || (PlayerState.PlayerTurnCount - default.WILL_LOSS_START_TURN)
             % default.NUM_TURNS_FOR_WILL_LOSS != 0)
     {
 		return ELR_NoInterrupt;
