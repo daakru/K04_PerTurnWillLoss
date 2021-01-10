@@ -16,8 +16,10 @@ Disables the default Pod Sighted Will Loss event from the base game.
 
 This mod's default configuration bases the amount of will lost on the rank of the soldier affected.
 This attempts to simulate the increased psychological effect the prolonged conflict has on your troops.
-    There is a minimum will loss of 2, so expect that until your soldiers reach at least Lieutenant.
+    There is a minimum will loss of 3, so expect that until your soldiers reach at least Sergeant.
     The higher their rank, the more will they can lose each turn the will loss event occurs.
+
+The starting turn and frequency are configurable, and default to start on turn 2, then every 3rd turn after.
 
 Included in this mod are additional modifications to many of the default will loss events. 
 These are taken largely in part from the configs for LWotC and include:
@@ -66,9 +68,10 @@ These are taken largely in part from the configs for LWotC and include:
 
 [Compatibility]
 
+Modifies the config of X2EventListener_DefaultWillEvents and may conflict with other mods that do the same.
+
 Safe to add mid campaign.
 Safe to remove mid campaign.
-Modifies the config of X2EventListener_DefaultWillEvents and may conflict with other mods that do the same.
 No class overrides, yay!
 
 [Configuration]
